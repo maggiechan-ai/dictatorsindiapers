@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dad Confessionals — Dictators in Diapers</title>
+  <meta name="description" content="Anonymous confessions from dads in the trenches. The stuff they think but never say out loud.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👶</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="emoji">👶</span> Dictators in Diapers
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="confessionals.html" class="active">Confessionals</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#newsletter" class="btn btn-primary btn-small">Join the Regime</a></li>
+        </ul>
+        <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="padding: 80px 0 60px;">
+    <div class="container">
+      <h1 class="fade-in">Dad <span>Confessionals</span></h1>
+      <p class="tagline fade-in">Anonymous. Honest. The stuff dads actually think but never say out loud.</p>
+    </div>
+  </section>
+
+  <!-- Confessionals -->
+  <section class="section">
+    <div class="container" style="max-width: 750px;">
+
+      <div class="confessional fade-in" style="margin-bottom: 32px;">
+        I told my wife I was "working late" but I was actually sitting in the car in the driveway for 20 minutes listening to a podcast before going inside. The toddler had been screaming since 5am. I just needed silence. I'm not proud. But I'm not sorry.
+        <div class="attribution">— Anonymous Dad, 2 kids, ages 1 & 3</div>
+      </div>
+
+      <div class="confessional fade-in" style="margin-bottom: 32px;">
+        My 3-year-old asked me where babies come from. I panicked and said "Amazon." My wife overheard and hasn't stopped laughing at me for three days. The kid now thinks Prime delivery includes siblings.
+        <div class="attribution">— Anonymous Dad, 1 kid, age 3</div>
+      </div>
+
+      <div class="confessional fade-in" style="margin-bottom: 32px;">
+        I have perfected the art of pretending to be asleep when the baby cries at 3am. I know my wife knows. She knows I know she knows. We've never discussed it. This is marriage.
+        <div class="attribution">— Anonymous Dad, 1 kid, age 8 months</div>
+      </div>
+
+      <div class="confessional fade-in" style="margin-bottom: 32px;">
+        I cried in the shower after my son's first day of preschool. Not because I was sad. Because I had four uninterrupted hours for the first time in three years and I didn't know what to do with myself.
+        <div class="attribution">— Anonymous Dad, 1 kid, age 3</div>
+      </div>
+
+      <div class="confessional fade-in" style="margin-bottom: 32px;">
+        My daughter's favorite word is "no." Her second favorite word is "mine." Her third favorite word is "daddy" — but only when she wants something. I have never felt more used and more loved at the same time.
+        <div class="attribution">— Anonymous Dad, 2 kids, ages 2 & 4</div>
+      </div>
+
+      <div class="confessional fade-in" style="margin-bottom: 32px;">
+        I Googled "is it normal to not feel bonded with your newborn" at 2am in the hospital. Every article said "give it time." They were right. But nobody told me how terrifying those first weeks would be when you feel nothing and think something's wrong with you.
+        <div class="attribution">— Anonymous Dad, 1 kid, age 14 months</div>
+      </div>
+
+      <div class="confessional fade-in" style="margin-bottom: 32px;">
+        The highlight of my week is grocery shopping alone. Not because I love groceries. Because for 45 minutes, nobody is touching me, asking me for snacks, or having an emotional breakdown about sock texture.
+        <div class="attribution">— Anonymous Dad, 3 kids, ages 1, 3, & 5</div>
+      </div>
+
+      <div class="confessional fade-in" style="margin-bottom: 32px;">
+        My 4-year-old told her preschool teacher that "daddy says bad words when he builds IKEA furniture." She's not wrong. I'm not even mad. I'm impressed by her reporting accuracy.
+        <div class="attribution">— Anonymous Dad, 1 kid, age 4</div>
+      </div>
+
+      <!-- Submit CTA -->
+      <div style="text-align: center; margin-top: 48px; padding: 40px; background: var(--charcoal); border-radius: var(--radius); color: var(--white);" class="fade-in">
+        <h3 style="color: var(--gold); margin-bottom: 12px; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: 0;">Got something to confess?</h3>
+        <p style="color: rgba(255,255,255,0.7); margin-bottom: 20px;">100% anonymous. No judgment. Just dads being honest.</p>
+        <a href="about.html#submit" class="btn btn-primary">Submit a Confessional</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="newsletter-box fade-in">
+        <h2>📡 Get the Intel</h2>
+        <p>New confessionals + dispatches weekly. Straight to your inbox.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Newsletter signup coming soon!');">
+          <input type="email" placeholder="your@email.com" required>
+          <button type="submit" class="btn btn-primary">Enlist Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding: 0;">
+        <p>© 2026 Dictators in Diapers. All rights reserved. No sleep was had in the making of this site.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
