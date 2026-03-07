@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} — Dictators in Diapers</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta property="og:title" content="{{TITLE}} — Dictators in Diapers">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dictatorsindiapers.com/posts/{{SLUG}}.html">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👶</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .post-hero { padding: 80px 0 40px; }
+    .post-hero .tag { 
+      display: inline-block; background: rgba(245,166,35,0.2); color: var(--gold);
+      font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 2px; padding: 6px 14px; border-radius: 4px; margin-bottom: 16px;
+    }
+    .post-hero h1 { text-transform: none; font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: -1px; line-height: 1.15; }
+    .post-meta { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-top: 16px; }
+    .post-body { max-width: 750px; margin: 0 auto; padding: 48px 24px 80px; }
+    .post-body h2 { color: var(--navy); margin: 40px 0 16px; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 1.5rem; letter-spacing: 0; }
+    .post-body h3 { color: var(--navy-light); margin: 32px 0 12px; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.2rem; letter-spacing: 0; }
+    .post-body p { margin-bottom: 20px; font-size: 1.05rem; line-height: 1.8; }
+    .post-body ul, .post-body ol { margin-bottom: 20px; padding-left: 24px; }
+    .post-body li { margin-bottom: 8px; line-height: 1.7; }
+    .post-body blockquote { border-left: 4px solid var(--gold); padding: 16px 24px; margin: 24px 0; background: var(--cream); border-radius: 0 8px 8px 0; font-style: italic; }
+    .post-body strong { color: var(--navy); }
+    .post-body em { color: var(--grey-mid); }
+    .post-body hr { border: none; border-top: 2px solid var(--cream); margin: 40px 0; }
+    .post-nav { display: flex; justify-content: space-between; align-items: center; padding: 32px 0; border-top: 2px solid var(--cream); margin-top: 48px; }
+    .post-nav a { font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+    .post-cta { background: var(--cream); border-radius: var(--radius); padding: 40px; text-align: center; margin-top: 48px; }
+    .post-cta h3 { color: var(--navy); margin-bottom: 12px; text-transform: none; font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: 0; }
+    .post-cta p { color: var(--grey-mid); margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="emoji">👶</span> Dictators in Diapers</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../blog.html" class="active">Blog</a></li>
+          <li><a href="../confessionals.html">Confessionals</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../index.html#newsletter" class="btn btn-primary btn-small">Join the Regime</a></li>
+        </ul>
+        <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero post-hero">
+    <div class="container">
+      <span class="tag">{{TAG}}</span>
+      <h1>{{TITLE}}</h1>
+      <div class="post-meta">{{DATE}} · {{READ_TIME}} min read</div>
+    </div>
+  </section>
+
+  <article class="post-body">
+    {{CONTENT}}
+
+    <div class="post-cta">
+      <h3>🫡 Got a War Story?</h3>
+      <p>We publish dispatches from dads on the front lines. Your worst day might be another dad's "thank god it's not just me" moment.</p>
+      <a href="../about.html#submit" class="btn btn-dark">Submit Your Dispatch</a>
+    </div>
+
+    <div class="post-nav">
+      <a href="../blog.html">← All Dispatches</a>
+      <a href="../index.html#newsletter">Join the Regime →</a>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding: 0;">
+        <p>© 2026 Dictators in Diapers. All rights reserved. No sleep was had in the making of this site.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
